@@ -322,8 +322,8 @@
             [{/if}]
 
             [{block name="details_productmain_productlinksselector"}]
-                [{block name="details_productmain_productlinks"}]
-                    <ul class="list-unstyled details-action-links">
+                <ul class="list-unstyled details-action-links">
+                    [{block name="details_productmain_productlinks"}]
 
                         [{if $oViewConf->getShowCompareList()}]
                             <li>
@@ -361,8 +361,8 @@
                         <li>
                             [{mailto extra='id="questionMail"' address=$oDetailsProduct->oxarticles__oxquestionemail->value|default:$oxcmp_shop->oxshops__oxinfoemail->value subject='QUESTIONS_ABOUT_THIS_PRODUCT'|oxmultilangassign|cat:" "|cat:$oDetailsProduct->oxarticles__oxartnum->value text='QUESTIONS_ABOUT_THIS_PRODUCT'|oxmultilangassign}]
                         </li>
-                    </ul>
-                [{/block}]
+                    [{/block}]
+                </ul>
             [{/block}]
         </div>
     </div>
