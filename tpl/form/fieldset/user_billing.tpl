@@ -1,5 +1,4 @@
 [{assign var="invadr" value=$oView->getInvoiceAddress()}]
-[{assign var="blBirthdayRequired" value=$oView->isFieldRequired(oxuser__oxbirthdate)}]
 
 [{if isset( $invadr.oxuser__oxbirthdate.month )}]
     [{assign var="iBirthdayMonth" value=$invadr.oxuser__oxbirthdate.month}]
