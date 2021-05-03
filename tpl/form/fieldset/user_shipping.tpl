@@ -191,14 +191,16 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-lg-3" for="[{$countrySelectId}]">[{oxmultilang ident="DD_USER_LABEL_STATE" suffix="COLON"}]</label>
+            <label class="control-label col-lg-3" for="deladr_oxuser__oxstateid">[{oxmultilang ident="DD_USER_LABEL_STATE" suffix="COLON"}]</label>
             <div class="col-lg-9">
                 [{include file="form/fieldset/state.tpl"
                     countrySelectId="delCountrySelect"
                     stateSelectName="deladr[oxaddress__oxstateid]"
                     selectedStateIdPrim=$deladr.oxaddress__oxstateid
                     selectedStateId=$delivadr->oxaddress__oxstateid->value
-                    class="form-control"}]
+                    class="form-control"
+                    id="deladr_oxuser__oxstateid"
+                }]
                 <div class="help-block"></div>
             </div>
         </div>
